@@ -1,62 +1,18 @@
 ---
 layout: post
-title: HxNet 
-subtitle: Characteristics of extended hour trading returns when intraday returns increase
-cover-img: /assets/img/chart.jpg
-thumbnail-img: /assets/img/hxblock.png
-share-img: /assets/img/hxblock.png
+title: Flake it till you make it
+subtitle: Excerpt from Soulshaping by Jeff Brown
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+author: Sharon Smith and Barry Simpson
 ---
 
-### Highlights <br> <br>
+Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
 
-- This study proposes a simple and expandable deep learning model to verify the importance of variables in predicting the direction of intraday returns by adding an attention method.
-- This model identifies the nonlinear relationship between extended hour trading and intraday returns.
-- This study shows that a deep learning model is a tool for increasing the forecasting power and a useful method for interpreting the financial market.
-<br><br>
+The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
 
-### 1. Introduction <br>
+At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
 
-**1.1 Literature Review** <br>
-Many studies have examined the relationship between extended hour (or overnight) and daytime trading session returns (Cox and Peterson, 1994; Park, 1995; Berkman et al., 2012; Lou et al., 2019; Akbas et al., 2022; Ham et al., 2022). For instance, Levi et al. (2018) divide overnight returns into aftermarket and premarket returns and studied the relationship between each return and the daytime trading returns. However, as most studies were conducted on a daily level, there are limitations in understanding the dynamics of financial markets on a minute or second level. Moreover, studies use machine learning, but the majority of them focuses only on increasing the accuracy of prediction (Obthong et al., 2020; Ferreira et al., 2021). In sum, studies that examine the relationship between the dynamics of extended hour trading and daytime trading returns using machine learning are scarce.
-
-**1.2 Contribution** <br>
-This study investigates the nonlinear relationship between extended hour trading and intraday returns using a deep learning model with an attention method, which has recently attracted attention. This study contributes to elaborately illuminates the underlying dynamics of the financial market. Furthermore, it proposes HxNet to determine the characteristics of historical data of the extended hour trading sessions that are important for predicting future intraday returns. This model can be used for intraday stock price data and stock data on various frequency levels. Moreover, the model can be applied to diverse time-series data, beyond stock prices. Furthermore, this study provides a guide for the use of machine learning in finance. This model may not be a mere tool to increase the prediction rate, but a method to better understand the financial market by identifying the relationship between the nonlinear pattern of the past and future returns. <br><br>
-
-### 2. Data and Methodology <br>
-
-**2.1 Data** <br>
-This study collects data on stocks listed in the New York Stock Exchange (NYSE), American Stock Exchange (AMEX), and Nasdaq National Market System (NMS) at least once since 2010 from the NYSE Trade and Quote (TAQ) database. 
-
-**2.2 Model** <br>
-As demonstrated below, a model will be designed to learn the nonlinear relationship between extended hour trading and intraday returns and find the significance of variables in the intraday return direction by adding attention to a deep learning structure. This model uses convolution layers that have the advantage of capturing features and adds an attention module for easy interpretation of results (which can be developed through experiments). This model will be constructed as a module that has scalability to add it anywhere between neural network layers. It is compared to existing models, such as regression and Convolutional Neural Networks, to evaluate its performance and determine the important features of the time-series for predicting future daytime trading session returns through attention weight.
-
-![hxblock](/assets/img/intext_hxblock.PNG) <br>
-
-
-### Appendix: Easy explanation on the concept of attention <br>
-Attention is a machine-learning method that mimics human attention and refers to crucial input parts. The methods used for attention have been extensive. You may refer to the photos below by Xu et al. (2015) for an in-depth understanding. The images show that the focus is placed on shapes corresponding to the underlined words. Thus, attention is a method of letting a model concentrate on and refer to parts that are crucial for prediction.
-
-![xu2015](/assets/img/xu2015.png)
-
-The decoder refers to the entire input sentence in the encoder at every time step when predicting the output. Bahdanau et al. (2014) develop a model to learn efficiently by focusing more related words on the word to be predicted at that point among the words in the encoder, rather than referring to the entire input sentence with the same importance. They suggest the following process. First, when the input is fed into the decoder, the attention score is calculated from the current hidden states of the encoder (there are various methods such as dot-product attention). Then, the score is normalized to 1 via softmax and a weighted sum is obtained by multiplying it to the hidden state of the encoder. The result of the attention value is called a context vector because it contains an encoder context. Attention is linked to the current hidden state of the decoder, so that the important features (words) for the prediction can be evaluated. <br><br>
-
-### References
-Akbas, F., Boehmer, E., Jiang, C., & Koch, P.D., 2022. Overnight returns, daytime reversals, and future stock returns. _Journal of Financial Economics_ 145, 850-875.
-
-Berkman, H., Koch, P.D., Tuttle, L., & Zhang, Y.J., 2012. Paying attention: Overnight returns and the hidden cost of buying at the open. _Journal of Financial and Quantitative Analysis_ 47, 715-741.
-
-Cox, D.R., & Peterson, D.R., 1994. Stock returns following large one‐day declines: Evidence on short‐term reversals and longer‐term performance. _Journal of Finance_ 49, 255-267.
-
-Ferreira, F.G.D.C., Gandomi, A.H., & Cardoso, R.T.N., 2021. Artificial intelligence applied to stock market trading: A review. _IEEE Access_ 9, 30898-30917.
-
-Ham, H., Ryu, D., & Webb, R.I., 2022. The effects of overnight events on daytime trading sessions. _International Review of Financial Analysis_ 83, 102228.
-
-Levi, S., Livnat, J., Zhang, L., & Zhang, X.-J., 2018. Is extended-hours trading indicative of subsequent returns? _Journal of Investing_ 27, 9-19.
-
-Lou, D., Polk, C., & Skouras, S., 2019. A tug of war: Overnight versus intraday expected returns. _Journal of Financial Economics_ 134, 192-213.
-
-Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G., 2020. A survey on machine learning for stock price prediction: Algorithms and techniques. 2nd International Conference on Finance, Economics, _Management and IT Business_, 63-71.
-
-Park, J., 1995. A market microstructure explanation for predictable variations in stock returns following large price changes. _Journal of Financial and Quantitative Analysis_ 30, 241-256.
-
-Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhudinov, R., Zemel, R., & Bengio, Y., 2015. Show, attend and tell: Neural image caption generation with visual attention. _Proceedings of the 32nd International Conference on Machine Learning_, 2048-2057.
+A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
