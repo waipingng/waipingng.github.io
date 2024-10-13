@@ -1,0 +1,55 @@
+---
+layout: post
+title: Research Proposal 1
+subtitle: The Influence of Analyst Backgrounds on Market Outcomes
+cover-img: /assets/img/proposal_1.jpg
+thumbnail-img: /assets/img/proposal_1a.jpg
+share-img: /assets/img/proposal_1b.jpg
+---
+
+### Highlights <br><br>
+
+    This study investigates how the backgrounds and biases of sell-side analysts influence the objectivity and effectiveness of their recommendations.
+    It examines whether analysts’ private communication with firm management impacts forecast accuracy or introduces bias.
+    It proposes a mixed-method approach combining sentiment analysis with advanced machine learning techniques to uncover underlying patterns in analyst recommendations.
+
+<br><br>
+
+1. Introduction <br>
+
+1.1 Literature Review <br>
+Analysts play a critical role in financial markets by providing forecasts and recommendations that influence market behavior and investor decisions. However, research indicates that their recommendations are often biased by optimism or external influences (Soltes, 2013; Cao et al., 2020). Analyst behavior, particularly the communication between analysts and firms, raises questions about conflicts of interest. Recent studies have found that analysts with closer ties to company management tend to provide more favorable recommendations, which may mislead individual investors (Amiram et al., 2016; Blankespoor et al., 2020). While prior research focuses on forecast accuracy, limited work explores how personal attributes—such as educational background or institutional experience—affect these outcomes.
+
+Additionally, textual analysis of financial disclosures and analyst reports offers new insights into market behavior. Advances in natural language processing (NLP) have enabled researchers to analyze not only numbers but also the sentiment conveyed through text (Bochkay et al., 2022). However, most studies still rely on dictionary-based sentiment analysis, which lacks the nuance of deep learning approaches (Hartmann et al., 2022). This research aims to fill these gaps by exploring how analysts’ personal backgrounds influence forecast bias and how machine learning tools can provide deeper insights into their recommendations.
+
+1.2 Contribution <br>
+This study contributes to the literature in several ways. First, it provides empirical evidence on how analysts' personal characteristics, such as education and professional experience, affect the tone and accuracy of their recommendations. Second, it introduces machine learning-based sentiment analysis to better understand the text of analyst reports. Finally, it explores the market impact of biased forecasts and proposes regulatory mechanisms to mitigate these effects.
+
+<br><br>
+2. Data and Methodology <br>
+
+2.1 Data <br>
+The data will include analyst reports from financial databases like Bloomberg and Thomson Reuters, combined with biographical information on analysts (e.g., education, career history). Additional data on firm performance and stock returns will be collected to evaluate the impact of recommendations.
+
+2.2 Model <br>
+This study will use both quantitative and qualitative approaches:
+
+    Sentiment Analysis: Machine learning models (e.g., BERT) will analyze the sentiment in analyst reports to uncover potential biases. The models will focus on the tone of reports before and after earnings announcements to assess consistency.
+    Regression Models: A panel data model will investigate the relationship between analyst attributes and forecast accuracy, controlling for firm-level and market variables.
+    Event Studies: These will measure abnormal returns following recommendations to assess the market impact of biased or optimistic forecasts.
+    Case Studies: Select firms with close analyst-manager relationships will be analyzed in-depth to explore the qualitative impact of communication on forecast bias.
+
+<br><br>
+3. Expected Contributions <br>
+
+This research aims to offer practical insights for regulators and market participants. It will provide evidence-based recommendations for improving transparency in analyst-firm interactions and propose machine learning tools for more accurate sentiment analysis. The findings will enhance our understanding of how human factors shape market outcomes and help design better practices to ensure fairer financial markets.
+
+<br><br>
+References
+
+    Amiram, D., Owens, E., & Rozenbaum, O. (2016). Do information releases increase or decrease information asymmetry? Journal of Accounting and Economics, 62(1), 121-138.
+    Blankespoor, E., de Haan, E., & Marinovic, I. (2020). Disclosure processing costs and investors' information choice. Journal of Accounting and Economics, 70(2), 1-45.
+    Bochkay, K., Brown, N., Leone, A., & Tucker, J. (2022). Textual analysis in financial disclosures: A decade in review. The Accounting Review, 97(1), 45-72.
+    Cao, X., Guan, Y., Li, Z., & Yang, Z. (2020). Private communication and analyst behavior. Review of Accounting Studies.
+    Soltes, E. (2013). Private interactions between firm management and sell-side analysts. Journal of Accounting Research, 51(5), 1331-1370.
+    Hartmann, F., Heitmann, M., Siebert, C., & Schamp, C. (2022). Machine learning and sentiment analysis in financial disclosures. Journal of Financial Economics.
